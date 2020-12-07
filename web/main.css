@@ -1,0 +1,68 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body{
+    background: #000428        ;
+    background: -webkit-linear-gradient(to right, #e1eec3,#f05053);
+    background: linear-gradient(to right,#e1eec3,#f05053);
+    color: white;
+    padding: 50px;
+}
+
+#location{
+    display: block;
+    border: none;
+    background: rgba(224,255,255, .5);
+    border-radius: 10px;
+    padding: 20px;
+    color:rgba(224, 18, 18, 0.5);
+    outline: none;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#location::placeholder{
+    color:rgba(224, 18, 18, 0.5);
+}
+
+#show{
+    display: block;
+    border: none;
+    margin-top: 15px;
+    background: #000428        ;
+    background: -webkit-linear-gradient(to right,#7F00FF,#E100FF);
+    background: linear-gradient(to right,#7F00FF,#E100FF);
+    border-radius: 10px;
+    padding: 20px;
+    color:black;
+    outline: none;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#show:hover{
+    opacity: .9;
+}
+
+#info{
+    display: block;
+    border: none;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 20px;
+    color:#00004C;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
