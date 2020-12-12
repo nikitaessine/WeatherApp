@@ -9,29 +9,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    
+    
+
+
     <input id="location" type="text" placeholder="Enter the city..." required="">
 
     <button id="show">GET WEATHER</button>
 
     <div id= "info"></div>
+    <div id="snow"></div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        // js code to call python functions
-        async function display_weather(){
-            let place = document.getElementById("location").value;
-
-            //call function get_weather from python code
-            let res = await eel.get_weather(place)();
-            document.getElementById('info').innerHTML = res;
-        }
-
-        jQuery("#show").on('click', function(){
-            //by pressing button weather displays
-            display_weather();
-        });
-    </script>
-
+    <script src="main.js"></script>
 
 </body>    
 </html>

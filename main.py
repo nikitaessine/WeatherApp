@@ -11,8 +11,11 @@ def get_weather(place):
     
     mgr = owm.weather_manager()
 
-    observation = mgr.weather_at_place(place)
-    w = observation.weather
+    try:
+        observation = mgr.weather_at_place(place)
+        w = observation.weather
+    except:
+        return "DID NOT FOUND CITY CALLED " + place + " !"
 
     temp = w.temperature('celsius')['temp']
     temp = round(temp)
