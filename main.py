@@ -2,7 +2,7 @@ import eel
 import pyowm
 
 
-owm = pyowm.OWM("7bdb8ba83dbaf8796b0327c7fd80dba6")
+owm = pyowm.OWM("")
 
 @eel.expose
 def get_weather(place):
@@ -15,7 +15,7 @@ def get_weather(place):
         observation = mgr.weather_at_place(place)
         w = observation.weather
     except:
-        return "DID NOT FOUND CITY CALLED " + place + " !"
+        return "DID NOT FOUND CITY LOL" + place + " !"
 
     temp = w.temperature('celsius')['temp']
     temp = round(temp)
